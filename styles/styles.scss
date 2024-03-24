@@ -1,0 +1,30 @@
+@import './header.scss';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-main: "Montserrat", sans-serif
+}
+
+body {
+    font-family:var(--font-main) ;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1230px;
+    padding: 0 10px;
+    width: 100%;
+}
+
+button{
+    border: none;
+}

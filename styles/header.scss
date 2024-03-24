@@ -1,0 +1,159 @@
+.header{
+    border-bottom: solid 1px #807D7E;
+    &__inner{
+        display: flex;
+        align-items: center;
+        padding: 30px 0;
+        .left-block{
+            padding-right: 76px;
+            display: flex;
+            .task-logo{
+                width: 91px;
+                height: 45px;
+            }
+            .nav {
+                display: flex;
+                align-items: center;
+                &__links{
+                    padding-left: 85px;
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    column-gap: 40px;
+                }
+                &__link{
+                    font-family: "Roboto      ", monospace;
+                    color: #807D7E;
+                    font-size: 22px;
+                    font-weight: 500;
+                }
+                .nav-small{
+                    display: none;
+                }
+                @media screen and (max-width: 900px) {
+                    &__links{
+                        padding-left: 50px;
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        column-gap: 15px;
+                    }
+                    &__link{
+                        font-family: "Roboto      ", monospace;
+                        color: #807D7E;
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+                }
+                @media screen and (max-width: 720px) {
+                    &__links{
+                        padding-left: 50px;
+                        list-style: none;
+                        display: none;
+                        align-items: center;
+                        column-gap: 15px;
+                        
+                    }
+                    &-small{
+                        .nav__link{
+                            font-family: "Roboto      ", monospace;
+                            color: #807D7E;
+                            font-size: 20px;
+                            font-weight: 500;
+                        }
+                        display: block;
+                    }
+                }
+                 
+            }
+            
+        }
+        
+        .right-block{
+            display: flex;
+            .search-button{
+                display: flex;
+                align-items: center;
+                background-color: #f6f6f6;
+                width: 267px;
+                height: 44px;
+                border-radius: 8px;
+                .search-icon{
+                    padding-left: 20px;
+                    padding-right: 12px;
+                }
+                .search-text{
+                    color:#807D7E;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+                
+            }
+            @media screen and (max-width: 1140px) {
+                &{
+                    .search-button{
+                        width: 55px;
+                        justify-content: center;
+                        .search-icon{
+                            padding-left: 0px;
+                            padding-right: 0px;
+                        }
+                        .search-text{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            
+            .small-buttons{
+                margin-left: 60px;
+                display: flex;
+                align-items: center;
+                .small-btn{
+                    background-color: #f6f6f6;
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 8px;
+                    margin-right: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    // .btn-img{
+                    //     padding-left: 12px;
+                    // }
+                }
+
+                @media screen and (max-width: 1300px) {
+                    &{
+                        display: none;
+                    }
+                }
+                
+                
+            }
+            .burger-menu{
+                
+                display: none;
+                @media screen and (max-width: 1300px) {
+                    &{
+                        display: block;
+                        margin-left: 25px;
+                        background-color: #f6f6f6;
+                        width: 44px;
+                        height: 44px;
+                        border-radius: 8px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }   
+            }
+        }
+        @media screen and (max-width: 1300px) {
+            &{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
